@@ -4,11 +4,17 @@
     @media screen and (min-width: 480px) {
         width: 480px;
     }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
 }
 
 .products.section {
-    padding: 121px 0px 98px 0px;
+    padding: 121px 0px 98px;
     background-color: map-get($colors, 'white-bg-button');
+    @media screen and (min-width: 768px) {
+        padding: 122px 0px 112px;
+    }
 }
 
 .products {
@@ -23,7 +29,10 @@
     font-size: 34px;
     line-height: 1.147;
     margin-bottom: 144px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.964;
+        margin-bottom: 150px;
     }
 }
 
@@ -33,21 +42,31 @@
     font-size: 18px;
     line-height: 1.166;
     margin-bottom: 15px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.153;
+    }
+}
+
+.products__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
     }
 }
 
 .products__item {
-    margin-bottom: 130px;
     padding: 161px 39px 41px 41px;
     position: relative;
     border-radius: 24px;
+    &:not(:last-child) {
+        margin-bottom: 130px;
+    }
     &:nth-child(3n + 1) {
         background-color: map-get($colors, 'bg-hero');
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/pink.png);
+            background-image: url(../images/pink_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -55,29 +74,31 @@
             top: -115px;
             left: 50%;
             margin-left: -124.5px;
-        }
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            &:before {
-                content: '';
-                display: inline-block;
-                background-image: url(../images/pink@2x.png);
-                background-size: 249px 252px;
-                width: 249px;
-                height: 252px;
-                position: absolute;
-                top: -115px;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(../images/pink_mob@2x.png);
+            }
+            @media screen and (min-width: 768px) {
+                background-size: 220px 226px;
+                width: 220px;
+                height: 226px;
+                top: -100px;
                 left: 50%;
-                margin-left: -124.5px;
+                margin-left: -110px;
+                background-image: url(../images/pink_tab.png);
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: url(../images/pink_tab@2x.png);
+                }
             }
         }
     }
-
     &:nth-child(3n + 2) {
         background-color: map-get($colors, 'prod_bg_second');
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/orange.png);
+            background-image: url(../images/orange_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -90,7 +111,7 @@
             &:before {
                 content: '';
                 display: inline-block;
-                background-image: url(../images/orange@2x.png);
+                background-image: url(../images/orange_mob@2x.png);
                 background-size: 249px 252px;
                 width: 249px;
                 height: 252px;
@@ -106,7 +127,7 @@
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/green.png);
+            background-image: url(../images/green_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -119,7 +140,7 @@
             &:before {
                 content: '';
                 display: inline-block;
-                background-image: url(../images/green@2x.png);
+                background-image: url(../images/green_mob@2x.png);
                 background-size: 249px 252px;
                 width: 249px;
                 height: 252px;
@@ -130,7 +151,12 @@
             }
         }
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
+        padding: 152px 11px 40px;
+        &:not(:last-child) {
+            margin-right: 20px;
+            margin-bottom: 0px;
+        }
     }
 }
 
@@ -157,6 +183,9 @@
     font-size: 14px;
     line-height: 1.5;
     padding-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        line-height: 1.785;
+    }
 }
 
 .products__button {
