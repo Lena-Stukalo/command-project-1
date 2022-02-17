@@ -1,5 +1,5 @@
 body {
-  background-color: --prirmary-backrgaund-color;
+  background-color: getColor('bg-primary');
   font-family: DM Sans, sans-serif;
 }
 h1,
