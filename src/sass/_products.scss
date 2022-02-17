@@ -1,0 +1,64 @@
+.products.section {
+    background-color: #ffff;
+}
+
+.poducts.section .container {
+    text-align: center;
+}
+
+.products__header {
+    color: map-get($colors, 'highlighted-text-color');
+    text-transform: uppercase;
+    font-family: Titan One, sans-serif;
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.products__header-label {
+    color: map-get($colors, 'secondary-text-color');
+    font-family: Titan One, sans-serif;
+    font-size: 18px;
+    line-height: 1.166;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products__item {
+    &:nth-child(3n + 1) {
+        background-color: map-get($colors, 'bg-hero');
+    }
+    &:nth-child(3n + 2) {
+        background-color: map-get($colors, 'prod_bg_second');
+    }
+    &:nth-child(3n) {
+        background-color: map-get($colors, 'prod_bg_third');
+    }
+    min-width: 280px;
+}
+
+.products__name {
+    color: map-get($colors, 'white-text');
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.products__description {
+    color: map-get($colors, 'white-text');
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 152%;
+    /* or 21px */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+}
