@@ -250,7 +250,7 @@
         }
     }
     // Product card content styles
-    &__name {
+    &__title {
         position: relative;
         color: getColor('white-text');
         text-transform: uppercase;
@@ -274,7 +274,7 @@
             }
         }
     }
-    &__description {
+    &__content {
         color: getColor('white-text');
         font-family: DM Sans, sans-serif;
         font-size: 14px;
