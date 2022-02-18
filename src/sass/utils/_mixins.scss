@@ -1,5 +1,5 @@
 @mixin tel {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 479px) {
     @content;
   }
 }
@@ -11,7 +11,7 @@
 }
 
 @mixin tab {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     @content;
   }
 }
@@ -23,7 +23,7 @@
 }
 
 @mixin desk {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279px) {
     @content;
   }
 }
