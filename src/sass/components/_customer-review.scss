@@ -1,17 +1,21 @@
-.container {
+.container__customer {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 480px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 620px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     max-width: 930px;
   }
 }
 
 .customer-review__item {
   width: 100%;
+  padding-bottom: 45px;
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    padding-bottom: 40px;
+  }
 }
 
 .customer-review__img {
@@ -77,7 +81,6 @@
   }
 }
 .customer-review__content-name {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
