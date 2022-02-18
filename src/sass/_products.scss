@@ -11,7 +11,6 @@
 
 .products.section {
     padding: 121px 0px 98px;
-    background-color: map-get($colors, 'white-bg-button');
     @media screen and (min-width: 768px) {
         padding: 122px 0px 112px;
     }
@@ -24,7 +23,7 @@
 }
 
 .products__header {
-    color: map-get($colors, 'highlighted-text-color');
+    color: getColor('highlighted-text-color');
     text-transform: uppercase;
     font-size: 34px;
     line-height: 1.147;
@@ -37,7 +36,7 @@
 }
 
 .products__header-label {
-    color: map-get($colors, 'secondary-text-color');
+    color: getColor('secondary-text-color');
     text-transform: uppercase;
     font-size: 18px;
     line-height: 1.166;
@@ -62,11 +61,11 @@
         margin-bottom: 130px;
     }
     &:nth-child(3n + 1) {
-        background-color: map-get($colors, 'bg-hero');
+        background-color: getColor('bg-hero');
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/pink_mob.png);
+            background-image: url(../images/product_ice1_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -75,7 +74,7 @@
             left: 50%;
             margin-left: -124.5px;
             @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                background-image: url(../images/pink_mob@2x.png);
+                background-image: url(../images/product_ice1_mob@2x.png);
             }
             @media screen and (min-width: 768px) {
                 background-size: 220px 226px;
@@ -84,21 +83,21 @@
                 top: -100px;
                 left: 50%;
                 margin-left: -110px;
-                background-image: url(../images/pink_tab.png);
+                background-image: url(../images/product_ice1_tab.png);
                 @media (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
-                    background-image: url(../images/pink_tab@2x.png);
+                    background-image: url(../images/product_ice1_tab@2x.png);
                 }
             }
         }
     }
     &:nth-child(3n + 2) {
-        background-color: map-get($colors, 'prod_bg_second');
+        background-color: getColor('prod_bg_second');
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/orange_mob.png);
+            background-image: url(../images/product_ice2_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -111,7 +110,7 @@
             &:before {
                 content: '';
                 display: inline-block;
-                background-image: url(../images/orange_mob@2x.png);
+                background-image: url(../images/product_ice2_mob@2x.png);
                 background-size: 249px 252px;
                 width: 249px;
                 height: 252px;
@@ -123,11 +122,11 @@
         }
     }
     &:nth-child(3n) {
-        background-color: map-get($colors, 'prod_bg_third');
+        background-color: getColor('prod_bg_third');
         &:before {
             content: '';
             display: inline-block;
-            background-image: url(../images/green_mob.png);
+            background-image: url(../images/product_ice3_mob.png);
             background-size: 249px 252px;
             width: 249px;
             height: 252px;
@@ -140,7 +139,7 @@
             &:before {
                 content: '';
                 display: inline-block;
-                background-image: url(../images/green_mob@2x.png);
+                background-image: url(../images/product_ice3_mob@2x.png);
                 background-size: 249px 252px;
                 width: 249px;
                 height: 252px;
@@ -162,7 +161,7 @@
 
 .products__name {
     position: relative;
-    color: map-get($colors, 'white-text');
+    color: getColor('white-text');
     text-transform: uppercase;
     font-size: 20px;
     line-height: 1.15;
@@ -178,7 +177,7 @@
 }
 
 .products__description {
-    color: map-get($colors, 'white-text');
+    color: getColor('white-text');
     font-family: DM Sans, sans-serif;
     font-size: 14px;
     line-height: 1.5;
@@ -200,5 +199,5 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-    fill: map-get($colors, 'highlighted-text-color');
+    fill: getColor('highlighted-text-color');
 }

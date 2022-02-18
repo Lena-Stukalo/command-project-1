@@ -1,7 +1,7 @@
 $colors: (
     'bg-hero': #ffb8ca,
     'bg-mob-menu': #e17992,
-    'bg-primary': #e5e5e5,
+    'bg-primary': #ffffff,
     'bg-secondary': #fff5f6,
     'highlighted-text-color': #d41443,
     'secondary-text-color': #ffa5ba,
@@ -18,3 +18,7 @@ $colors: (
     'prod_bg_second': #f0d1a5,
     'prod_bg_third': #c2e297,
 );
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
