@@ -21,4 +21,3 @@ $colors: (
 
 @function getColor($key) {
     @return map-get($colors, $key);
-}
