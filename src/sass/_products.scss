@@ -291,6 +291,7 @@
         }
     }
     &__button {
+        transition: transform 200ms 0s ease-in-out;
         cursor: pointer;
         display: flex;
         background-color: getColor('bg-primary');
@@ -304,7 +305,7 @@
             background-color: getColor('hover-white-bg-btn');
         }
         &:hover {
-            transform: rotate(90deg);
+            transform: rotate(450deg);
         }
     }
     &__icon {
