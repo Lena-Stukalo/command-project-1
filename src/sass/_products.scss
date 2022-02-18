@@ -75,6 +75,7 @@
         &:nth-child(3n + 1) {
             background-color: getColor('bg-hero');
             &:before {
+                transition: transform 275ms 0s ease-in-out;
                 content: '';
                 display: inline-block;
                 background-image: url(../images/product_ice1_mob.png);
@@ -123,6 +124,7 @@
         &:nth-child(3n + 2) {
             background-color: getColor('prod_bg_second');
             &:before {
+                transition: transform 275ms 0ms ease-in-out;
                 content: '';
                 display: inline-block;
                 background-image: url(../images/product_ice2_mob.png);
@@ -171,6 +173,7 @@
         &:nth-child(3n) {
             background-color: getColor('prod_bg_third');
             &:before {
+                transition: transform 275ms 0s ease-in-out;
                 content: '';
                 display: inline-block;
                 background-image: url(../images/product_ice3_mob.png);
@@ -232,6 +235,9 @@
         }
         &:hover,
         &:focus {
+            &:before {
+                transform: rotate(360deg);
+            }
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 6px 6px rgba(0, 0, 0, 0.06),
                 1px 8px 6px rgba(0, 0, 0, 0.16);
         }
