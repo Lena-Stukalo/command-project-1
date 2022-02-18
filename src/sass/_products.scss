@@ -226,7 +226,7 @@
             }
         }
         @media screen and (min-width: 768px) {
-            flex-basis: calc((100%-40px) / 3);
+            flex-basis: calc(100% / 3);
             padding: 152px 11px 40px;
             &:not(:last-child) {
                 margin-right: 20px;
@@ -234,10 +234,9 @@
             }
         }
         @media screen and (min-width: 1200px) {
-            flex-basis: calc((100%-54px) / 3);
             padding: 163px 44px 50px;
             &:not(:last-child) {
-                margin-right: 27px;
+                margin-right: 24px;
                 margin-bottom: 0px;
             }
         }
