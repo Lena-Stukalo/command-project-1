@@ -1,0 +1,45 @@
+.hero {
+  background-color: getColor('bg-hero');
+}
+
+.hero__title {
+  margin-top: 137px;
+  font-family: titan one;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  color: getColor('white-text');
+}
+
+.title-part {
+  font-size: 48px;
+  color: getColor('color-bg-btn');
+}
+
+.hero__btn {
+  font-family: DM Sans;
+  font-size: 8px;
+  background-color: getColor('white-text');
+  border-radius: 20px;
+  width: 62px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.hero__btn--red-btn {
+  background-color: getColor(highligted-text-color);
+  width: 82.8px;
+}
+
+.hero__list {
+  display: flex;
+}
+
+.hero__list-link {
+  color: getColor('white-text');
+}
+
+.hero__list-link--red-link {
+  color: getColor('highligted-text-color');
+}
