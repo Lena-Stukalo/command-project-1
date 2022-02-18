@@ -118,7 +118,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__menu {
-    width: 254px;
+    min-width: 254px;
+    width: 50%;
   }
 
   .page-header__open-modal-btn {
