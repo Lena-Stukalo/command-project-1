@@ -2,9 +2,19 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 480px;
+  @media screen and(min-width:768px) {
+    max-width: 620px;
+  }
 }
+
+.customer-review__item {
+  width: 100%;
+}
+
 .customer-review__img {
   margin: 0 auto 30px;
+  width: 85px;
+  background-repeat: no-repeat;
 }
 .customer-review__blok__content {
   margin-bottom: 30px;
@@ -53,4 +63,31 @@
     background-size: contain;
     background-image: url(../images/dots.svg);
   }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination-bullet-active {
+  background-image: url(../images/house.svg);
+  background-size: cover;
+  border-radius: unset;
+  background-color: transparent;
+  width: 13px;
+  height: 12px;
 }
