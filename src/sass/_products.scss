@@ -292,11 +292,14 @@
         }
     }
     &__button {
-        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        background-color: getColor('bg-primary');
+        margin: 0px auto;
+        padding: 0px;
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        align-items: center;
         &:hover,
         &:focus {
             background-color: getColor('hover-white-bg-btn');
@@ -306,10 +309,7 @@
         }
     }
     &__icon {
-        cursor: pointer;
-        display: block;
-        text-align: center;
-        margin: 0px auto;
+        margin: auto;
         fill: getColor('highlighted-text-color');
     }
 }
