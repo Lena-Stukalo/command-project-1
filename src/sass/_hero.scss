@@ -3,7 +3,17 @@
 }
 
 .hero__title {
-  margin-top: 137px;
+  @media screen and (min-width: 320px) {
+    margin-top: 137px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 84px;
+  }
+
   font-family: titan one;
   font-weight: 400;
   font-size: 26px;
@@ -42,4 +52,116 @@
 
 .hero__list-link--red-link {
   color: getColor('highligted-text-color');
+}
+.hero__thumb {
+  display: flex;
+}
+.hero__wrap-center {
+  position: absolute;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffa5ba;
+    z-index: 1;
+    @media screen and (min-width: 320px) {
+      width: 346px;
+      height: 344px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 324px;
+      height: 322px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 538px;
+      height: 538px;
+    }
+  }
+}
+.hero__icecream {
+  position: relative;
+  left: 81px;
+  top: 9px;
+  z-index: 2;
+  @media screen and (min-width: 320px) {
+    left: 81px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 71px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 119px;
+  }
+}
+.hero__wrap-left {
+  z-index: 3;
+}
+.hero__box-second {
+  display: flex;
+}
+.hero__milk {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-top: 56px;
+  }
+}
+
+.hero__box-text {
+  margin-top: 112px;
+  width: 200px;
+  height: 78px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.hero__box-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.hero__box-number {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 1.15px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  &::before {
+  }
+}
+
+.hero__box-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+.girl {
+  margin-top: auto;
 }

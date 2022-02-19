@@ -1,6 +1,9 @@
 <main>
     <section class="hero">
         <div class="container">
+            <div class="hero__thumb">
+            <div class="hero__wrap-left">
+                <div class="hero__box-first">
             <h1 class="hero__title">ICE CREAM <br> MADE WITH <br> <span class="title-part">PASSION</span></h1>
             <ul class="hero__list">
                 <li class="hero__list-item">
@@ -14,6 +17,66 @@
                     </button>
                 </li>
             </ul>
+            </div>
+            <div class="hero__box-second">
+            <picture>
+                <source srcset="./images/hero-milk.png 1x, 
+                                ./images/hero-milk-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="
+                                ./images/hero-milk-tab.png 1x,
+                                ./images/hero-milk-tab-2x.png 2x" media="(min-width: 768px)">
+                
+                <img class="hero__milk" src="./images/hero-milk.png" alt="milk">
+            </picture>
+            <p class="hero__box-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+            </div>
+            </div>
+            <div class="hero__wrap-center">
+                <picture>
+                    <source
+                    srcset=
+                    "./images/hero-icecream.png 1x, 
+                    ./images/hero-icecream-2x.png 2x"
+                    media="(min-width: 1280px)">
+                    <source
+                    srcset="
+                    ./images/hero-icecream-tab.png 1x,
+                    ./images/hero-icecream-tab-2x.png 2x"
+                    media="(min-width: 768px)">
+                    <source
+                    srcset="
+                    ./images/hero-icecream-mob.png 1x,
+                    ./images/hero-icecream-mob-2x.png 2x"
+                     media="(min-width: 320px)">
+                <img class="hero__icecream" src="./images/hero-icecream.png" alt="icecream">
+                </picture>
+            </div>
+            <div class="hero__box-right">
+                <ul class="hero__box-list">
+                    <li class="hero__box-item">
+                        <p class="hero__box-number">16</p>
+                        <p class="hero__box-text">cafes</p>
+                    </li>
+                    
+                    <li class="hero__box-item">
+                        <p class="hero__box-number">23</p>
+                        <p class="hero__box-text">food trucks</p>
+                    </li>
+                </ul>
+
+                <picture class="girl">
+                    <source srcset="./images/hero-girl.png 1x, 
+                                    ./images/hero-girl-2x.png 2x" media="(min-width: 1280px)">
+                    <source srcset="
+                                    ./images/hero-girl-tab.png 1x,
+                                    ./images/hero-girl-tab-2x.png 2x" media="(min-width: 768px)">
+                  
+                    <img class="hero__girl" src="./images/hero-girl.png" alt="girl">
+                </picture>
+            </div>
+            </div>
         </div>
     </section>
 </main>
