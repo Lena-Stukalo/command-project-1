@@ -1,0 +1,157 @@
+.contacts-section {
+  padding: 86px 30px 113px 30px;
+  background-color: getColor('bg-secondary');
+  @include tab {
+    padding: 119px 16px 158px 16px;
+  }
+  @include desk {
+    padding: 132px 95px 165px 95px;
+  }
+}
+
+.contacts-cards-list {
+  margin: -20px;
+  margin-bottom: 54px;
+  @include tab {
+    display: flex;
+    margin: -10px;
+  }
+}
+
+.contacts-cards-item {
+  background: getColor('bg-primary');
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 21px 43px 20px;
+  margin: 20px;
+  @include tab {
+    margin: 10px;
+  }
+}
+
+.contacts-card__pre-title {
+  width: 80px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: getColor('white-text');
+  margin-bottom: 25px;
+  border-radius: 4px;
+  background-color: #f0d1a5;
+  @include tab {
+    font-size: 16px;
+    width: 73px;
+    height: 28px;
+  }
+  &-2nd {
+    width: 130px;
+    background: #c2e297;
+    @include tab {
+      width: 138px;
+    }
+  }
+}
+
+.contacts-card__title,
+.contacts-card-schedule__title,
+.contacts-card-schedule__content {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: getColor('black-text');
+  @include tab {
+    font-size: 14px;
+  }
+  @include desk {
+    font-size: 16px;
+  }
+}
+
+.contacts-card-schedule__content {
+  color: getColor('secondary-text-color');
+}
+
+.contacts-card__after-title {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.contacts-card-schedule-list {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts-card-schedule-item:first-child {
+  margin-bottom: 10px;
+}
+
+.contacts-card__after-title,
+.contacts-card-contacts__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: getColor('gray-text');
+  @include tab {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @include desk {
+    font-size: 16px;
+    line-height: 1.83;
+  }
+}
+
+.contacts-card-contacts__link {
+  @include tab {
+    line-height: 1.83;
+  }
+}
+
+.contacts-card-contacts-item:first-child {
+  margin-top: 25px;
+}
+// -----------------------------------------BUTTONS
+.contacts-btn-item {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-btn {
+  width: 161px;
+  height: 44px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: getColor('white-text');
+  background: #d41342;
+  border: 0;
+  border-radius: 22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-white-btn {
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: getColor('highligted-text-color');
+}
+
+.contacts-btn__icon1 {
+  margin-left: 8px;
+  width: 5.51px;
+  height: 10px;
+}
+
+.contacts-btn__icon2 {
+  margin-left: 13px;
+  width: 6.3px;
+  height: 10px;
+}
