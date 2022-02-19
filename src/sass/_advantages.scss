@@ -95,7 +95,10 @@
   &::before {
     position: absolute;
     content: '';
-
+    background-image: url(../images/advantage-milk.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantage-milk-2x.png);
+    }
     top: 0;
     left: 0;
     width: 100%;
@@ -108,7 +111,10 @@
   &::before {
     position: absolute;
     content: '';
-    background-image: url(../../src/images/advantage-apple.png);
+    background-image: url(../images/advantage-apple.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantage-apple-2x.png);
+    }
     top: 0;
     left: 0;
     width: 100%;
@@ -121,7 +127,10 @@
   ::before {
     position: absolute;
     content: '';
-    background-image: url(../../src/images/advantage-heart.png);
+    background-image: url(../images/advantage-heart.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/advantage-heart-2x.png);
+    }
     top: 0;
     left: 0;
     width: 100%;
