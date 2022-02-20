@@ -1,11 +1,18 @@
 .contacts-section {
+  width: 100%;
   padding: 86px 30px 113px 30px;
-  background-color: getColor('bg-secondary');
+  background-image: linear-gradient(to bottom, #ffffff 10%, #fff5f6 10%);
   @include tab {
+    background-image: linear-gradient(to bottom, #ffffff 21%, #fff5f6 21%);
     padding: 119px 16px 158px 16px;
   }
   @include desk {
-    padding: 132px 95px 165px 95px;
+    padding: 132px 0 165px 0;
+    background-image: url(../images/contacts-bg.png),
+      linear-gradient(to bottom, #ffffff 1%, #fff5f6 1%);
+    background-repeat: no-repeat;
+    background-position: 50% 210px;
+    background-size: contain;
   }
 }
 
@@ -15,6 +22,12 @@
   @include tab {
     display: flex;
     margin: -10px;
+    margin-bottom: 81px;
+  }
+  @include desk {
+    margin: -15px;
+    margin-bottom: 86px;
+    justify-content: center;
   }
 }
 
@@ -26,6 +39,10 @@
   margin: 20px;
   @include tab {
     margin: 10px;
+  }
+  @include desk {
+    margin: 15px;
+    width: 330px;
   }
 }
 
@@ -119,6 +136,14 @@
   margin-top: 25px;
 }
 // -----------------------------------------BUTTONS
+.contacts-btn-list {
+  @include tab {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
 .contacts-btn-item {
   display: flex;
   justify-content: center;
@@ -140,8 +165,15 @@
 
 .contacts-white-btn {
   margin-top: 10px;
-  background-color: #ffffff;
+  background-color: getColor('white-bg-btn');
   color: getColor('highligted-text-color');
+  &:hover {
+    background-color: getColor('hover-white-bg-btn');
+  }
+  @include tab {
+    margin-top: 0;
+    margin-left: 15px;
+  }
 }
 
 .contacts-btn__icon1 {
