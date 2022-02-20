@@ -1,0 +1,32 @@
+<div class="backdrop is-hidden" data-modal data-modal1 >
+    <div class="modal">
+        <button type="button" data-modal-close class="modal__close-btn">
+            <svg class="modal__close-icon" width=30px height=30px>
+                <use href="./images/icons-svg.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form action="#" class="modal-form">
+            <p class="modal-form__head">CONTACT US</p>
+
+            <label class="modal-form__field"
+                >Name
+                <span class="modal-form__wrapper">
+                        <input type="text" class="modal-form__input" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кириллицы или латиницы" required/>                        
+                </span>
+            </label>
+
+            <label class="modal-form__field"
+                >Phone number
+                <span class="modal-form__wrapper">
+                    <input type="tel" class="modal-form__input" name="user-tel" title="067-000-00-00" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required/>
+                </span>
+            </label>
+            <label class="modal-form__field"
+                >Message
+                <textarea class="modal-form__message" name="user-message" placeholder="Got a question, a comment or a flavour suggestion? We'd love to hear from you!"></textarea>
+            </label>
+            
+            <button type="submit" class="modal-form__button">Submit</button>
+        </form>
+    </div>
+</div>
