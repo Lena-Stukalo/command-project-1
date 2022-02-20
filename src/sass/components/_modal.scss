@@ -113,6 +113,15 @@
 
     transform: scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        @media screen and (max-width: 679px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 420px;
+        transform: translate(-50%,-50%) scale(1);
+    }
+
 
         @media screen and (min-width: 680px) {
             position: absolute;
