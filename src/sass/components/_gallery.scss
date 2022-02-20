@@ -1,0 +1,21 @@
+.gallary-section {
+    background-image: linear-gradient(
+        to bottom,
+        getColor('bg-secondary') 50%,
+        getColor('bg-primary') 50%
+    );
+}
+.gallery-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+        max-width: 620px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 930px;
+    }
+}
+.gllary-picture {
+    width: 100%;
+}
