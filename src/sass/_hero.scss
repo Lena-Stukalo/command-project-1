@@ -166,6 +166,9 @@
     }
 
     .hero__read-more-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 7px;
         width: 18px;
         height: 18px;
