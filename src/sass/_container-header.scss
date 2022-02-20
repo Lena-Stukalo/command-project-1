@@ -1,5 +1,4 @@
-.container-header,
-.container {
+.container-header {
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -8,16 +7,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-header,
-  .container {
+  .container-header {
     max-width: 768px;
     padding: 37px 34px 0 34px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container-header,
-  .container {
+  .container-header {
     max-width: 1280px;
     padding: 37px 115px 0 115px;
   }
