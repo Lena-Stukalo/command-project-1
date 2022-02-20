@@ -15,14 +15,15 @@
 }
 
 .modal-form__head {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 35px;
     line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     text-align: center;
     color: #D41443;
     margin-bottom: 12px;
+    font-family: Titan One;
 }
 
 .modal-form__field {
@@ -86,7 +87,7 @@
     line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #fff;
+    color: #ffb8ca;
     background-color: #212121;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 14px;
@@ -149,7 +150,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     color: inherit;
-    background-color: #212121;
+    background-color: #ffb8ca;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #fff;
