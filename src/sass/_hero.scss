@@ -20,19 +20,35 @@
     }
 }
 
-// .hero__title {
-//     margin-top: 110px;
-//     // @media screen and (min-width: 320px) {
-//     //     margin-top: 137px;
-//     // }
-//     @media screen and (min-width: 768px) {
-//         margin-top: 15px;
-//     }
+.hero__icecream {
+    animation: UpImage 2s;
+}
 
-//     @media screen and (min-width: 1280px) {
-//         margin-top: 84px;
-//     }
-// }
+@keyframes UpImage {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.girl {
+    animation: rotateImg 1000ms;
+    animation-delay: 500ms;
+    transform-origin: 0 100%;
+    transform: rotate(90deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(87deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 .hero__title {
     margin-top: 95px;
