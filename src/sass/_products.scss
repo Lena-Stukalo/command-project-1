@@ -81,13 +81,13 @@
         &:nth-child(3n + 1) {
             background-color: getColor('bg-hero');
             &:before {
-                transition: transform 275ms 0s ease-in-out;
+                transition: transform 275ms 0ms ease-in-out;
                 content: '';
                 display: inline-block;
                 background-image: url(../images/product_ice1_mob.png);
-                background-size: contain;
-                max-width: 249px;
-                height: 100%;
+                background-size: 249px 252px;
+                width: 249px;
+                height: 252px;
                 position: absolute;
                 top: -115px;
                 left: 50%;
