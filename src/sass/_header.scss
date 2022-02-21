@@ -76,7 +76,7 @@ body {
 }
 
 @media screen and (max-width: 1279px) {
-    .page-header__menu.is-open {
+    .backdrop-menu.is-open .page-header__menu {
         transform: translateX(0);
     }
 
