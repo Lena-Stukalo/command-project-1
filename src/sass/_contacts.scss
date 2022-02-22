@@ -132,7 +132,7 @@
     }
 }
 
-.contacts-card-contacts-item:first-child {
+.contacts-card-contacts-list {
     margin-top: 25px;
 }
 // -----------------------------------------BUTTONS
@@ -147,6 +147,11 @@
 .contacts-btn-item {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+    @include tab {
+        margin-top: 0;
+        margin-left: 15px;
+    }
 }
 
 .contacts-btn {
@@ -164,15 +169,10 @@
 }
 
 .contacts-white-btn {
-    margin-top: 10px;
     background-color: getColor('white-bg-btn');
     color: getColor('highlighted-text-color');
     &:hover {
         background-color: getColor('hover-white-bg-btn');
-    }
-    @include tab {
-        margin-top: 0;
-        margin-left: 15px;
     }
 }
 
