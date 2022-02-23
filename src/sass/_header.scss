@@ -18,8 +18,16 @@ body {
 
 .page-header__logo {
     animation: shake 1000ms;
+    display: flex;
+    align-items: center;
+    font-family: Titan One;
+    color: getColor('color-bg-btn');
+    font-size: 30px;
 }
 
+.page-header__logo-img {
+    margin-right: 25px;
+}
 @keyframes shake {
     10%,
     90% {
