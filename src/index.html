@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream Shop</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -16,6 +17,9 @@
       rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
       <link rel="shortcut icon" type="image/png" href="./images/favicon.ico" />
+
+
+
   </head>
   <body>
     
@@ -25,7 +29,7 @@
     <main>
       <include src="./partials/hero.html"></include>
       <include src="./partials/products.html"></include> 
-      <!-- <include src="./partials/about.html"></include> -->
+      <include src="./partials/about.html"></include>
       <include src="./partials/advantages.html"></include> 
       <include src="./partials/gallery.html"></include> 
       <include src="./partials/customer-reviews.html"></include> 
@@ -33,15 +37,17 @@
     </main>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal.html"></include>
+    <include src="./partials/about-modal.html"></include>
+
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     
-    <script src="./index.js"></script>
-
+    <script src="./js/index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./menu.js"></script>
-    <script src="./swiper.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./modal1.js"></script>
+    <script src="./js/menu.js" ></script>
+    <script src="./js/swiper.js" ></script>
+   <script src="./js/about__modal.js" ></script>
+    <script src="./js/modal.js" ></script>
+
   </body>
 </html>

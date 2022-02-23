@@ -3,14 +3,14 @@
     margin: 0 auto;
     padding: 0px 20px;
     @media screen and (min-width: 480px) {
-        width: 480px;
+        max-width: 480px;
     }
     @media screen and (min-width: 768px) {
-        width: 768px;
+        max-width: 768px;
         padding: 0px 34px;
     }
     @media screen and (min-width: 1280px) {
-        width: 1280px;
+        max-width: 1280px;
         padding: 0px 116px 0px 114px;
     }
 }
@@ -81,7 +81,7 @@
         &:nth-child(3n + 1) {
             background-color: getColor('bg-hero');
             &:before {
-                transition: transform 275ms 0s ease-in-out;
+                transition: transform 275ms 0ms ease-in-out;
                 content: '';
                 display: inline-block;
                 background-image: url(../images/product_ice1_mob.png);

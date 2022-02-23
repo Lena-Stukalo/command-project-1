@@ -1,129 +1,147 @@
 .container__customer {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 480px;
-  @media screen and (min-width: 768px) {
-    max-width: 620px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 930px;
-  }
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+        max-width: 620px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 930px;
+    }
 }
 .customer-review {
-  padding: 60px 0;
+    padding-top: 80px;
+    @media screen and (min-width: 768px) {
+        padding-top: 120px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 130px;
+    }
 }
 
 .customer-review__item {
-  width: 100%;
-  padding-bottom: 45px;
-  @media screen and(min-width:768px) and (max-width: 1279px) {
-    padding-bottom: 40px;
-  }
+    width: 100%;
+    padding-bottom: 45px;
+    @media screen and(min-width:768px) and (max-width: 1279px) {
+        padding-bottom: 40px;
+    }
 }
 
 .customer-review__img {
-  margin: 0 auto 30px;
-  width: 85px;
-  background-repeat: no-repeat;
-  @media screen and(min-width:768px) {
-    margin: 0 auto 20px;
-  }
-  @media screen and(min-width:1280px) {
-    margin: 0 auto 15px;
-  }
+    margin: 0 auto 30px;
+    width: 85px;
+    background-repeat: no-repeat;
+    @media screen and(min-width:768px) {
+        margin: 0 auto 20px;
+    }
+    @media screen and(min-width:1280px) {
+        margin: 0 auto 15px;
+    }
 }
 .customer-review__blok__content {
-  margin-bottom: 30px;
-  padding: 40px 50px 20px;
-  background-color: #fafafa;
-  @media screen and(min-width:768px) {
-    margin-bottom: 25px;
-    padding: 30px 40px;
-    background-color: #fdfdfd;
-  }
-  @media screen and(min-width:1280px) {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding: 40px 50px 20px;
     background-color: #fafafa;
-  }
+    @media screen and(min-width:768px) {
+        margin-bottom: 25px;
+        padding: 30px 40px;
+        background-color: #fdfdfd;
+    }
+    @media screen and(min-width:1280px) {
+        margin-bottom: 15px;
+        background-color: #fafafa;
+    }
 }
 .customer-review__content {
-  position: relative;
-  z-index: 0;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.55;
-  text-align: center;
-  color: getColor('black-text');
-  background: repeating-linear-gradient(180deg, #fafafa, #fafafa 29px, #e1e1e1 1px, #e1e1e1 30px);
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -15px;
-    left: 4px;
-    transform: translate(-50%);
-    z-index: -1;
-    fill: #e1e1e1;
-    width: 54px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/coma.svg);
-  }
-  @media screen and(min-width:768px) {
-    background: repeating-linear-gradient(180deg, #fdfdfd, #fdfdfd 29px, #e1e1e1 1px, #e1e1e1 30px);
-
-    font-size: 14px;
-    line-height: 2.16;
-    letter-spacing: 0.04em;
-  }
-  @media screen and(min-width:1280px) {
+    position: relative;
+    z-index: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    color: getColor('black-text');
     background: repeating-linear-gradient(180deg, #fafafa, #fafafa 29px, #e1e1e1 1px, #e1e1e1 30px);
-    font-size: 16px;
-    line-height: 1.86;
-  }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: 4px;
+        transform: translate(-50%);
+        z-index: -1;
+        fill: #e1e1e1;
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/coma.svg);
+    }
+    @media screen and(min-width:768px) {
+        background: repeating-linear-gradient(
+            180deg,
+            #fdfdfd,
+            #fdfdfd 29px,
+            #e1e1e1 1px,
+            #e1e1e1 30px
+        );
+
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+    }
+    @media screen and(min-width:1280px) {
+        background: repeating-linear-gradient(
+            180deg,
+            #fafafa,
+            #fafafa 29px,
+            #e1e1e1 1px,
+            #e1e1e1 30px
+        );
+        font-size: 16px;
+        line-height: 1.86;
+    }
 }
 .customer-review__content-name {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.86;
-  text-align: center;
-  color: getColor('black-text');
-  &::before {
-    content: '';
-    display: block;
-    margin: 0 auto 15px;
-    width: 32px;
-    height: 4px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../images/dots.svg);
-  }
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: getColor('black-text');
+    &::before {
+        content: '';
+        display: block;
+        margin: 0 auto 15px;
+        width: 32px;
+        height: 4px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../images/dots.svg);
+    }
 }
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .swiper-pagination-bullet-active {
-  background-image: url(../images/house.svg);
-  background-size: cover;
-  border-radius: unset;
-  background-color: transparent;
-  width: 13px;
-  height: 12px;
+    background-image: url(../images/house.svg);
+    background-size: cover;
+    border-radius: unset;
+    background-color: transparent;
+    width: 13px;
+    height: 12px;
 }

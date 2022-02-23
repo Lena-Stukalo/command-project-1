@@ -84,7 +84,7 @@ body {
 }
 
 @media screen and (max-width: 1279px) {
-    .page-header__menu.is-open {
+    .backdrop-menu.is-open .page-header__menu {
         transform: translateX(0);
     }
 
@@ -242,7 +242,7 @@ body {
         display: flex;
     }
 
-    .navigation-list {
+    .page-header__navigation {
         margin-left: 110px;
     }
 
