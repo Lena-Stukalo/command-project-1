@@ -170,6 +170,11 @@
     }
 }
 
+.footer-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-item_list {
     @media screen and(min-width:1280px) {
         display: flex;
